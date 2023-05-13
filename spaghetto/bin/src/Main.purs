@@ -514,7 +514,7 @@ main =
             { purs } <- runSpago env (mkBuildEnv buildArgs dependencies)
             publishEnv <- runSpago env (mkPublishEnv dependencies purs)
             void $ runSpago publishEnv (Publish.publish {})
-          Repl args -> do
+          Repl _args -> do
             -- TODO implement
             pure unit
           Bundle args@{ selectedPackage, ensureRanges } -> do

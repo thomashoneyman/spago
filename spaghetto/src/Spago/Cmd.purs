@@ -3,7 +3,6 @@ module Spago.Cmd where
 import Spago.Prelude
 
 import Data.Array as Array
-import Data.Nullable (Nullable)
 import Data.String (Pattern(..))
 import Data.String as String
 import Node.Library.Execa as Execa
